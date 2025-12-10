@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 10 Light Notes: Tabular Ray Diagram Data</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- MathJax Configuration and Library -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [ ['$','$'], ['\\(','\\)'] ]},
+            displayAlign: "center",
+            "HTML-CSS": { linebreaks: { automatic: true } },
+            "SVG": { linebreaks: { automatic: true } }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfcfc;
+            color: #1f2937;
+        }
+        .content-card {
+            background-color: #ffffff;
+            border: 1px solid #f3f4f6;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.08);
+        }
+        details > summary {
+            list-style: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        /* Theme Colors */
+        .summary-reflection { color: #c026d3; background-color: #fcf4ff; }
+        .summary-refraction { color: #059669; background-color: #f0fdf4; }
+        .summary-formula { color: #3b82f6; background-color: #eff6ff; }
+        .summary-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+        }
+        .note-content {
+            padding: 1rem 1.5rem;
+            line-height: 1.6;
+        }
+        .formula-box {
+            background-color: #fffbeb;
+            border-left: 4px solid #f97316;
+            padding: 0.75rem;
+            margin: 0.75rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+            overflow-x: auto;
+        }
+        .custom-list li {
+            position: relative;
+            padding-left: 1.5em;
+            margin-bottom: 0.5rem;
+        }
+        .custom-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #6d28d9;
+            font-weight: bold;
+        }
+        .ray-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        .ray-table th, .ray-table td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem 0.5rem;
+            text-align: center;
+        }
+        .ray-table th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+            color: #4b5563;
+        }
+        .ray-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-f5f3ff text-purple-900 p-8 mb-8 shadow-lg border-b-4 border-purple-200">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-extrabold tracking-tight text-purple-700">Light: Reflection & Refraction</h1>
+            <p class="mt-2 text-purple-500 text-lg">Class 10 Physics - Notes with Detailed Ray Diagram Data</p>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="max-w-4xl mx-auto px-4 pb-20">
+
+        <!-- Reflection Section - Pink Theme -->
+        <section id="reflection" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-pink-600 border-b-2 pb-2 border-pink-300 flex items-center">
+                <i class="fa-solid fa-cloud-moon mr-3"></i> 1. Reflection of Light (Mirrors)
+            </h2>
+
+            <!-- Topic 1: Basics and Laws -->
+            <details class="content-card shadow-md mb-4" open>
+                <summary class="summary-title summary-reflection">
+                    <span><i class="fa-solid fa-list-check mr-2"></i> Laws & Sign Convention</span>
+                    <i class="fa-solid fa-chevron-right text-sm transform transition-transform group-open:rotate-90"></i>
+                </summary>
+                <div class="note-content">
+                    <div class="formula-box">
+                        <h4 class="font-bold text-orange-700 mb-1">Laws of Reflection:</h4>
+                        <p>The angle of incidence ($\angle i$) is equal to the angle of reflection ($\angle r$). $$ \angle i = \angle r $$</p>
+                        <p class="text-sm mt-2 text-orange-600 font-semibold">
+                            (This concept represents the path of light hitting a surface and bouncing off, with the angles measured from the Normal.)
+                        </p>
+                    </div>
+                    
+                    <h5 class="font-semibold text-gray-700 mt-5">New Cartesian Sign Convention:</h5>
+                    <ul class="custom-list text-sm">
+                        <li>All distances are measured from the **Pole (P)**.</li>
+                        <li>The object is always placed to the **left** of the mirror.</li>
+                        <li>Distances measured in the direction of Incident Light (Right) are **Positive**.</li>
+                        <li>Distances measured against the direction of Incident Light (Left) are **Negative**.</li>
+                        <li>Heights measured upwards (above principal axis) are **Positive**, and downwards are **Negative**.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <!-- Topic 2: Ray Diagrams - Concave Mirror (Table) -->
+            <details class="content-card shadow-md mb-4" open>
+                <summary class="summary-title summary-reflection">
+                    <span><i class="fa-solid fa-table-list mr-2"></i> Concave Mirror Ray Diagram Data (6 Cases)</span>
+                    <i class="fa-solid fa-chevron-right text-sm transform transition-transform group-open:rotate-90"></i>
+                </summary>
+                <div class="note-content space-y-4">
+                    <p class="text-gray-700 font-medium">Concave mirrors are Converging. Image nature changes based on object position:</p>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="ray-table">
+                            <thead>
+                                <tr>
+                                    <th>Object Position</th>
+                                    <th>Image Position</th>
+                                    <th>Image Size</th>
+                                    <th>Nature of Image</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>At $\infty$ (Infinity)</td><td>At Focus (F)</td><td>Highly Diminished (Point)</td><td>Real & Inverted</td></tr>
+                                <tr><td>Beyond C</td><td>Between F and C</td><td>Diminished</td><td>Real & Inverted</td></tr>
+                                <tr><td>At C</td><td>At C</td><td>Same Size</td><td>Real & Inverted</td></tr>
+                                <tr><td>Between C and F</td><td>Beyond C</td><td>Enlarged</td><td>Real & Inverted</td></tr>
+                                <tr><td>At F</td><td>At $\infty$ (Infinity)</td><td>Highly Enlarged</td><td>Real & Inverted</td></tr>
+                                <tr class="bg-yellow-100 font-bold"><td>Between P and F</td><td>Behind the Mirror</td><td>Enlarged</td><td>Virtual & Erect</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Topic 3: Ray Diagrams - Convex Mirror (Descriptive) -->
+            <details class="content-card shadow-md mb-4">
+                <summary class="summary-title summary-reflection">
+                    <span><i class="fa-solid fa-list-ul mr-2"></i> Convex Mirror Image Formation (Always Virtual)</span>
+                    <i class="fa-solid fa-chevron-right text-sm transform transition-transform group-open:rotate-90"></i>
+                </summary>
+                <div class="note-content space-y-4">
+                    <p class="text-gray-700 font-medium">Convex mirrors are **Diverging Mirrors**. The image formation is highly consistent:</p>
+                    
+                    <div class="p-3 bg-fcf4ff border-2 border-purple-200 rounded-lg">
+                        <h5 class="font-bold text-purple-700 mb-1">Convex Mirror Image Summary:</h5>
+                        <ul class="custom-list text-sm">
+                            <li>**Object Position:** Anywhere between $\infty$ and P.</li>
+                            <li>**Image Position:** Always **Behind the Mirror** (between P and F).</li>
+                            <li>**Image Size:** Always **Diminished**.</li>
+                            <li>**Nature:** Always **Virtual** and **Erect**.</li>
+                        </ul>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Topic 4: Mirror Formulas -->
+            <details class="content-card shadow-md mb-4">
+                <summary class="summary-title summary-formula">
+                    <span><i class="fa-solid fa-atom mr-2"></i> Mirror Formulae & Magnification</span>
+                    <i class="fa-solid fa-chevron-right text-sm transform transition-transform group-open:rotate-90"></i>
+                </summary>
+                <div class="note-content space-y-3">
+                    <h4 class="font-bold text-blue-700">Mirror Formula:</h4>
+                    $$
+                    \frac{1}{f} = \frac{1}{v} + \frac{1}{u}
+                    $$
+                    <h4 class="font-bold text-blue-700 mt-4">Magnification ($m$):</h4>
+                    $$
+                    m = \frac{h'}{h} = - \frac{v}{u}
+                    $$
+                </div>
+            </details>
+        </section>
+
+        <!-- Refraction Section - Green Theme -->
+        <section id="refraction" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-green-700 border-b-2 pb-2 border-green-300 flex items-center">
+                <i class="fa-solid fa-sun-haze mr-3"></i> 2. Refraction of Light (Lenses)
+            </h2>
+
+            <!-- Topic 5: Laws of Refraction & Index -->
+            <details class="content-card shadow-md mb-4" open>
+                <summary class="summary-title summary-refraction">
+                    <span><i class="fa-solid fa-layer-group mr-2"></i> Refractive Index & Snell's Law</span>
+                    <i class="fa-solid fa-chevron-right text-sm transform transition-transform group-open:rotate-90"></i>
+                </summary>
+                <div class="note-content">
+                    <p class="text-gray-700 mb-2">Refraction is the bending of light when it passes from one medium to another.</p>
+                    <div class="formula-box !border-green-500 !bg-green-50">
+                        <h4 class="font-bold text-green-800 mb-1">Snell's Law:</h4>
+                        $$ \frac{\sin i}{\sin r} = n_{21} $$
+                    </div>
+
+                    <h4 class="font-bold text-gray-700 mt-5 mb-2">Bending Rules (Visual Description):</h4>
+                    <div class="p-3 bg-f0fdf4 border-2 border-green-200 rounded-lg">
+                        <ul class="custom-list text-sm">
+                            <li>**Rare $\to$ Dense Medium:** The light ray **bends TOWARDS the Normal**. (e.g., Air to Glass)</li>
+                            <li>**Dense $\to$ Rare Medium:** The light ray **bends AWAY from the Normal**. (e.g., Glass to Air)</li>
+                        </ul>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Topic 6: Ray Diagrams - Convex Lens (Table) -->
+            <details class="content-card shadow-md mb-4" open>
+                <summary class="summary-title summary-refraction">
+                    <span><i class="fa-solid fa-table-list mr-2"></i> Convex Lens Ray Diagram Data (6 Cases)</span>
+                    <i class="fa-solid fa-chevron-right text-sm transform transition-transform group-open:rotate-90"></i>
+                </summary>
+                <div class="note-content space-y-4">
+                    <p class="text-gray-700 font-medium">Convex lenses are Converging. Image formation is similar to the Concave Mirror:</p>
+                    
+                     <div class="overflow-x-auto">
+                        <table class="ray-table">
+                            <thead>
+                                <tr>
+                                    <th>Object Position</th>
+                                    <th>Image Position</th>
+                                    <th>Image Size</th>
+                                    <th>Nature of Image</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>At $\infty$ (Infinity)</td><td>At $F_2$</td><td>Highly Diminished (Point)</td><td>Real & Inverted</td></tr>
+                                <tr><td>Beyond $2F_1$</td><td>Between $F_2$ and $2F_2$</td><td>Diminished</td><td>Real & Inverted</td></tr>
+                                <tr><td>At $2F_1$</td><td>At $2F_2$</td><td>Same Size</td><td>Real & Inverted</td></tr>
+                                <tr><td>Between $F_1$ and $2F_1$</td><td>Beyond $2F_2$</td><td>Enlarged</td><td>Real & Inverted</td></tr>
+                                <tr><td>At $F_1$</td><td>At $\infty$ (Infinity)</td><td>Highly Enlarged</td><td>Real & Inverted</td></tr>
+                                <tr class="bg-yellow-100 font-bold"><td>Between $O$ and $F_1$</td><td>On the same side as Object</td><td>Enlarged</td><td>Virtual & Erect</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Topic 7: Ray Diagrams - Concave Lens (Descriptive) -->
+            <details class="content-card shadow-md mb-4">
+                <summary class="summary-title summary-refraction">
+                    <span><i class="fa-solid fa-list-ul mr-2"></i> Concave Lens Image Formation (Always Virtual)</span>
+                    <i class="fa-solid fa-chevron-right text-sm transform transition-transform group-open:rotate-90"></i>
+                </summary>
+                <div class="note-content space-y-4">
+                    <p class="text-gray-700 font-medium">Concave lenses are **Diverging Lenses**. The image formation is highly consistent:</p>
+                    
+                    <div class="p-3 bg-f0fdf4 border-2 border-green-200 rounded-lg">
+                        <h5 class="font-bold text-green-700 mb-1">Concave Lens Image Summary:</h5>
+                        <ul class="custom-list text-sm">
+                            <li>**Object Position:** Anywhere between $\infty$ and Optical Center (O).</li>
+                            <li>**Image Position:** Always **Between O and $F_1$** (on the same side as Object).</li>
+                            <li>**Image Size:** Always **Diminished**.</li>
+                            <li>**Nature:** Always **Virtual** and **Erect**.</li>
+                        </ul>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Topic 8: Lens Formulas & Power -->
+            <details class="content-card shadow-md mb-4">
+                <summary class="summary-title summary-formula">
+                    <span><i class="fa-solid fa-battery-half mr-2"></i> Lens Formulae & Power of Lens</span>
+                    <i class="fa-solid fa-chevron-right text-sm transform transition-transform group-open:rotate-90"></i>
+                </summary>
+                <div class="note-content space-y-3">
+                    <h4 class="font-bold text-blue-700">Lens Formula:</h4>
+                    $$
+                    \frac{1}{f} = \frac{1}{v} - \frac{1}{u} 
+                    $$
+                    <h4 class="font-bold text-blue-700 mt-4">Magnification ($m$):</h4>
+                    $$
+                    m = \frac{h'}{h} = \frac{v}{u}
+                    $$
+                    <h4 class="font-bold text-blue-700 mt-4">Power of a Lens ($P$):</h4>
+                    $$
+                    P = \frac{1}{f \text{ (in meters)}}
+                    $$
+                </div>
+            </details>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-purple-50 border-t border-purple-200 mt-12 py-6">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <p class="text-purple-600 text-sm font-medium">This file provides the complete Ray Diagram data in tabular format to compensate for the missing images.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
