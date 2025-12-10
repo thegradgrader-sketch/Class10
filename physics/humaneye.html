@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 10 Physics: The Human Eye and the Colourful World</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- MathJax Configuration and Library (for formulas) -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [ ['$','$'], ['\\(','\\)'] ]},
+            displayAlign: "center",
+            "HTML-CSS": { linebreaks: { automatic: true } },
+            "SVG": { linebreaks: { automatic: true } }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f9;
+            color: #1f2937;
+        }
+        .content-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        details > summary {
+            list-style: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        /* Theme Colors */
+        .summary-eye { color: #10b981; background-color: #ecfdf5; border-left: 5px solid #059669; }
+        .summary-defect { color: #ef4444; background-color: #fef2f2; border-left: 5px solid #dc2626; }
+        .summary-prism { color: #3b82f6; background-color: #eff6ff; border-left: 5px solid #2563eb; }
+        .summary-atm { color: #f59e0b; background-color: #fffdf0; border-left: 5px solid #d97706; }
+
+        .summary-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.25rem 1.5rem;
+            border-radius: 1rem 1rem 0 0;
+            font-weight: 700;
+            font-size: 1.125rem;
+        }
+        .note-content {
+            padding: 1rem 1.5rem 1.5rem 1.5rem;
+            line-height: 1.7;
+        }
+        .key-term {
+            background-color: #eef2ff;
+            color: #4f46e5;
+            padding: 0.1rem 0.4rem;
+            border-radius: 0.25rem;
+            font-weight: 600;
+        }
+        .point-list li {
+            margin-bottom: 0.6rem;
+            padding-left: 0.5rem;
+            border-left: 2px solid #a78bfa;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-indigo-700 text-white p-8 mb-8 shadow-2xl">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-extrabold tracking-tight">The Human Eye & The Colourful World</h1>
+            <p class="mt-2 text-indigo-200 text-lg">Class 10 CBSE Physics - Fully Detailed Notes</p>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="max-w-4xl mx-auto px-4 pb-20 space-y-8">
+
+        <!-- Section 1: The Human Eye (Structure & Function) -->
+        <section id="human-eye">
+            <h2 class="text-3xl font-bold mb-6 text-indigo-700 border-b-2 pb-2 border-indigo-300 flex items-center">
+                <i class="fa-solid fa-eye mr-3"></i> 1. The Human Eye
+            </h2>
+
+            <!-- Detail 1.1: Structure -->
+            <details class="content-card mb-4" open>
+                <summary class="summary-title summary-eye">
+                    <span><i class="fa-solid fa-cube mr-2"></i> Structure and Parts</span>
+                    <i class="fa-solid fa-chevron-down text-sm transform transition-transform group-open:rotate-180"></i>
+                </summary>
+                <div class="note-content">
+                    <p class="mb-4">The human eye is one of the most valuable sense organs, allowing us to see the colourful world around us. It works like a natural camera.</p>
+                    [attachment_0](attachment)
+                    <ul class="point-list mt-5 space-y-2 text-gray-700">
+                        <li><span class="key-term">Cornea:</span> Thin membrane through which light enters. It acts as the primary refractive surface.</li>
+                        <li><span class="key-term">Iris:</span> Dark muscular diaphragm that controls the size of the pupil.</li>
+                        <li><span class="key-term">Pupil:</span> Controls the amount of light entering the eye. In bright light, the Iris contracts the pupil; in dim light, it expands the pupil.</li>
+                        <li><span class="key-term">Crystalline Lens:</span> A convex lens (Converging lens) that provides the finer adjustment of focal length needed to focus the image exactly on the retina.</li>
+                        <li><span class="key-term">Ciliary Muscles:</span> Control the curvature (and thus the focal length) of the eye lens.</li>
+                        <li><span class="key-term">Retina:</span> The light-sensitive screen at the back of the eye. It contains Rods (for intensity/dim light) and Cones (for colour/bright light).</li>
+                        <li><span class="key-term">Optic Nerve:</span> Transmits visual information (electrical signals) from the Retina to the Brain.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <!-- Detail 1.2: Accommodation -->
+            <details class="content-card mb-4">
+                <summary class="summary-title summary-eye">
+                    <span><i class="fa-solid fa-maximize mr-2"></i> Power of Accommodation</span>
+                    <i class="fa-solid fa-chevron-down text-sm transform transition-transform group-open:rotate-180"></i>
+                </summary>
+                <div class="note-content">
+                    <p>It is the ability of the <span class="key-term">eye lens</span> to adjust its focal length. This adjustment is achieved by the **Ciliary Muscles**:</p>
+                    <ul class="point-list mt-3">
+                        <li>**For Distant Objects:** Ciliary muscles relax, making the lens thin. The focal length **increases**.</li>
+                        <li>**For Near Objects:** Ciliary muscles contract, making the lens thick (more curved). The focal length **decreases**.</li>
+                    </ul>
+                    <div class="bg-green-50 p-3 rounded-lg mt-4 border border-green-200">
+                        <p class="font-semibold text-green-700">Key Points:</p>
+                        <ul class="text-sm list-disc ml-5">
+                            <li><span class="font-bold">Near Point (N):</span> The minimum distance at which the eye can see an object clearly without strain. For a normal adult eye, this is **25 cm**.</li>
+                            <li><span class="font-bold">Far Point (F):</span> The maximum distance the eye can see clearly. For a normal eye, this is **Infinity ($\infty$)**.</li>
+                        </ul>
+                    </div>
+                </div>
+            </details>
+        </section>
+
+        <!-- Section 2: Defects of Vision and their Correction -->
+        <section id="defects">
+            <h2 class="text-3xl font-bold mb-6 text-red-600 border-b-2 pb-2 border-red-300 flex items-center">
+                <i class="fa-solid fa-glasses mr-3"></i> 2. Defects of Vision
+            </h2>
+
+            <!-- Detail 2.1: Myopia -->
+            <details class="content-card mb-4" open>
+                <summary class="summary-title summary-defect">
+                    <span><i class="fa-solid fa-magnifying-glass-minus mr-2"></i> Myopia (Nearsightedness)</span>
+                    <i class="fa-solid fa-chevron-down text-sm transform transition-transform group-open:rotate-180"></i>
+                </summary>
+                <div class="note-content">
+                    <p class="mb-3"><span class="font-bold text-red-700">Definition:</span> A person with Myopia can see **near objects clearly** but **distant objects indistinctly**.</p>
+                    
+                    <h5 class="font-semibold text-gray-700">Causes:</h5>
+                    <ul class="point-list">
+                        <li>Excessive curvature of the eye lens (becomes too thick).</li>
+                        <li>Elongation of the eyeball (eye length increases).</li>
+                    </ul>
+                    
+                    <h5 class="font-semibold text-gray-700 mt-3">Correction:</h5>
+                    <p>The image of a distant object is formed **in front of the retina**.</p>
+                    <p class="bg-red-50 p-3 rounded-lg mt-2 text-red-800 font-medium">
+                        It is corrected by using a **Concave Lens** (Diverging lens) of appropriate power.
+                    </p>
+                    [attachment_1](attachment)
+                </div>
+            </details>
+
+            <!-- Detail 2.2: Hypermetropia -->
+            <details class="content-card mb-4">
+                <summary class="summary-title summary-defect">
+                    <span><i class="fa-solid fa-magnifying-glass-plus mr-2"></i> Hypermetropia (Farsightedness)</span>
+                    <i class="fa-solid fa-chevron-down text-sm transform transition-transform group-open:rotate-180"></i>
+                </summary>
+                <div class="note-content">
+                    <p class="mb-3"><span class="font-bold text-red-700">Definition:</span> A person with Hypermetropia can see **distant objects clearly** but **near objects indistinctly**.</p>
+                    
+                    <h5 class="font-semibold text-gray-700">Causes:</h5>
+                    <ul class="point-list">
+                        <li>Focal length of the eye lens is too long (lens is too thin).</li>
+                        <li>Shortening of the eyeball (eye length decreases).</li>
+                    </ul>
+                    
+                    <h5 class="font-semibold text-gray-700 mt-3">Correction:</h5>
+                    <p>The image of a near object is formed **behind the retina**.</p>
+                    <p class="bg-red-50 p-3 rounded-lg mt-2 text-red-800 font-medium">
+                        It is corrected by using a **Convex Lens** (Converging lens) of appropriate power.
+                    </p>
+                    
+                </div>
+            </details>
+
+            <!-- Detail 2.3: Presbyopia -->
+            <details class="content-card mb-4">
+                <summary class="summary-title summary-defect">
+                    <span><i class="fa-solid fa-hand-holding-box mr-2"></i> Presbyopia (Old Age Defect)</span>
+                    <i class="fa-solid fa-chevron-down text-sm transform transition-transform group-open:rotate-180"></i>
+                </summary>
+                <div class="note-content">
+                    <p class="mb-3">This defect arises due to the gradual <span class="key-term">weakening of the ciliary muscles</span> and decreasing flexibility of the eye lens with age.</p>
+                    
+                    <h5 class="font-semibold text-gray-700 mt-3">Symptoms & Correction:</h5>
+                    <ul class="point-list">
+                        <li>The person finds it difficult to see near objects comfortably.</li>
+                        <li>It is corrected by using a **Convex Lens**.</li>
+                        <li>Sometimes, a person suffers from both Myopia and Hypermetropia; this is corrected using **Bifocal Lenses** (Concave lens on top, Convex lens on bottom).</li>
+                    </ul>
+                </div>
+            </details>
+        </section>
+
+        <!-- Section 3: Refraction and Dispersion -->
+        <section id="prism-dispersion">
+            <h2 class="text-3xl font-bold mb-6 text-blue-600 border-b-2 pb-2 border-blue-300 flex items-center">
+                <i class="fa-solid fa-shapes mr-3"></i> 3. Refraction, Dispersion, and Prism
+            </h2>
+
+            <!-- Detail 3.1: Refraction through Prism -->
+            <details class="content-card mb-4" open>
+                <summary class="summary-title summary-prism">
+                    <span><i class="fa-solid fa-diagram-project mr-2"></i> Refraction through a Glass Prism</span>
+                    <i class="fa-solid fa-chevron-down text-sm transform transition-transform group-open:rotate-180"></i>
+                </summary>
+                <div class="note-content">
+                    <p class="mb-3">In a prism, the emergent ray is not parallel to the incident ray. The emergent ray deviates from the direction of the incident ray by an angle called the **Angle of Deviation ($\delta$)**.</p>
+                    <p class="bg-blue-50 p-3 rounded-lg mt-4 font-medium text-blue-800">
+                        The angle of deviation depends on the refractive index of the material and the angle of the prism.
+                    </p>
+                </div>
+            </details>
+
+            <!-- Detail 3.2: Dispersion and Spectrum -->
+            <details class="content-card mb-4">
+                <summary class="summary-title summary-prism">
+                    <span><i class="fa-solid fa-rainbow mr-2"></i> Dispersion and Spectrum (VIBGYOR)</span>
+                    <i class="fa-solid fa-chevron-down text-sm transform transition-transform group-open:rotate-180"></i>
+                </summary>
+                <div class="note-content">
+                    <p class="mb-3"><span class="font-bold text-blue-700">Dispersion:</span> The splitting of white light into its constituent colours (the spectrum) when it passes through a transparent medium like a glass prism.</p>
+                    [attachment_2](attachment)
+
+                    <h5 class="font-semibold text-gray-700 mt-5">The Spectrum:</h5>
+                    <ul class="point-list">
+                        <li>The sequence of colours is **VIBGYOR** (Violet, Indigo, Blue, Green, Yellow, Orange, Red).</li>
+                        <li>**Violet** bends the **most** (shortest wavelength).</li>
+                        <li>**Red** bends the **least** (longest wavelength).</li>
+                    </ul>
+
+                    <h5 class="font-semibold text-gray-700 mt-3">Recombination (Newton's Experiment):</h5>
+                    <p>When the seven colours from the first prism are passed through a second, inverted prism, they recombine to give white light again.</p>
+                </div>
+            </details>
+
+            <!-- Detail 3.3: Rainbow -->
+            <details class="content-card mb-4">
+                <summary class="summary-title summary-prism">
+                    <span><i class="fa-solid fa-cloud-sun-rain mr-2"></i> Formation of a Rainbow</span>
+                    <i class="fa-solid fa-chevron-down text-sm transform transition-transform group-open:rotate-180"></i>
+                </summary>
+                <div class="note-content">
+                    <p>A rainbow is a natural spectrum appearing in the sky after a rain shower. It is caused by a combination of three phenomena occurring in water droplets:</p>
+                    <ul class="point-list">
+                        <li>**Refraction** and **Dispersion** of sunlight as it enters the droplet.</li>
+                        <li>**Total Internal Reflection** inside the droplet.</li>
+                        <li>**Refraction** as the light exits the droplet.</li>
+                    </ul>
+                </div>
+            </details>
+        </section>
+        
+        <!-- Section 4: Atmospheric Effects -->
+        <section id="atmospheric-effects">
+            <h2 class="text-3xl font-bold mb-6 text-yellow-700 border-b-2 pb-2 border-yellow-300 flex items-center">
+                <i class="fa-solid fa-sun mr-3"></i> 4. Atmospheric Effects
+            </h2>
+
+            <!-- Detail 4.1: Atmospheric Refraction -->
+            <details class="content-card mb-4" open>
+                <summary class="summary-title summary-atm">
+                    <span><i class="fa-solid fa-temperature-full mr-2"></i> Atmospheric Refraction & Twinkling</span>
+                    <i class="fa-solid fa-chevron-down text-sm transform transition-transform group-open:rotate-180"></i>
+                </summary>
+                <div class="note-content">
+                    <p><span class="font-bold text-yellow-700">Atmospheric Refraction:</span> Caused by the continuous change in the refractive index of Earth's atmosphere (denser near ground, rarer higher up).</p>
+
+                    <h5 class="font-semibold text-gray-700 mt-3">Twinkling of Stars:</h5>
+                    <ul class="point-list">
+                        <li>The light from the stars undergoes repeated refraction as it passes through layers of air with constantly changing refractive indices (due to temperature/density changes).</li>
+                        <li>This makes the apparent position of the star fluctuate rapidly, which is seen as **twinkling**.</li>
+                        <li>**Planets do not twinkle** because they are closer and appear larger; they act as a collection of point sources, and the random variations cancel out.</li>
+                    </ul>
+                    
+                    <h5 class="font-semibold text-gray-700 mt-3">Advanced Sunrise and Delayed Sunset:</h5>
+                    <p>Atmospheric refraction causes the Sun to be visible to us about **2 minutes before** the actual sunrise and for about **2 minutes after** the actual sunset.</p>
+                </div>
+            </details>
+
+            <!-- Detail 4.2: Scattering -->
+            <details class="content-card mb-4">
+                <summary class="summary-title summary-atm">
+                    <span><i class="fa-solid fa-lightbulb mr-2"></i> Scattering of Light</span>
+                    <i class="fa-solid fa-chevron-down text-sm transform transition-transform group-open:rotate-180"></i>
+                </summary>
+                <div class="note-content">
+                    <p class="mb-3"><span class="font-bold text-yellow-700">Tyndall Effect:</span> The scattering of light by colloidal particles or very fine suspended particles in a medium. (e.g., light path visible in a smoky room or forest canopy).</p>
+
+                    <h5 class="font-semibold text-gray-700 mt-3">Why is the Sky Blue? (Rayleigh's Law)</h5>
+                    <ul class="point-list">
+                        <li>The atmosphere has tiny air molecules (smaller than the wavelength of visible light).</li>
+                        <li>Blue light (shorter wavelength) is scattered much **more strongly** than red light (longer wavelength).</li>
+                        <li>When sunlight passes through the atmosphere, the blue colour is scattered all around the sky, making it appear blue.</li>
+                    </ul>
+
+                    <h5 class="font-semibold text-gray-700 mt-3">Colour of Sun at Sunrise/Sunset:</h5>
+                    <p>At sunrise/sunset, the light travels the **longest distance** through the atmosphere.</p>
+                    <ul class="point-list">
+                        <li>Most of the short-wavelength (blue) light is scattered away from the line of sight.</li>
+                        <li>The light that reaches our eyes is predominantly long-wavelength (red and orange) light. Hence, the Sun appears reddish.</li>
+                    </ul>
+                </div>
+            </details>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-indigo-50 border-t border-indigo-200 mt-12 py-6">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <p class="text-indigo-600 text-sm font-medium">These notes are comprehensive and self-contained, perfect for revision and sharing.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
